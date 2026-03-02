@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://marianetelesbento.github.io/divulga-mais/ -->
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./divulgaMais_files/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Divulga+_files/css2" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./divulgaMais_files/style.css">
+    <title>Divulga+</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#home">Divulga
+                <span style="color: var(--accent-color);">+</span>
+            </a> -->
+            <a class="navbar-brand " href="https://marianetelesbento.github.io/divulga-mais/#home">
+                <img src="./Divulga+_files/logo-divulga.jpeg" alt="logo-divulga" class="logo-divulga" style="width: 200px;">
+
+                <img src="./Divulga+_files/logo-divulga-mobile.jpeg" alt="logo-divulga" class="logo-divulga-mobile" style="width: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://marianetelesbento.github.io/divulga-mais/#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://marianetelesbento.github.io/divulga-mais/#eventos">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://marianetelesbento.github.io/divulga-mais/#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://marianetelesbento.github.io/divulga-mais/#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section" style="background-image: url(&#39;images/hero-park.jpg&#39;);">
+        <div class="hero-content mx-3">
+            <h1>Descubra os melhores eventos</h1>
+            <button class="btn btn-custom" onclick="scrollToSection(&#39;eventos&#39;)">Confira os eventos</button>
+        </div>
+    </section>
+
+    <!-- PRÓXIMOS EVENTOS -->
+    <section id="eventos" class="events-section">
+        <div class="container">
+            <h2 class="events-title">Próximos Eventos</h2>
+            <div class="row g-4">
+                <!-- Card 1 - Festival de Música -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card event-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
+                        <img src="./Divulga+_files/marcha-consciencia.jpg" class="card-img-top" alt="Marcha da Consciência Negra">
+                        <div class="card-body event-card-body">
+                            <h5 class="event-card-title">Marcha da Consciência Negra</h5>
+                            <p class="event-date">20/11/2025</p>
+                            <p class="event-location">Guarulhos-SP</p>
+                            <button class="btn btn-custom" onclick="showEventDetails(&#39;Marcha da Consciência Negra&#39;)">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 - Feira de Artesanato -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
+                        <img src="./Divulga+_files/artisan-fair.png" class="card-img-top" alt="Feira de Artesanato">
+                        <div class="card-body event-card-body">
+                            <h5 class="event-card-title">Feira de Artesanato</h5>
+                            <p class="event-date">12/11/2025</p>
+                            <p class="event-location">Area de Piquenique</p>
+                            <button class="btn btn-custom" onclick="showEventDetails(&#39;Feira de Artesanato&#39;)">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 - Aula de Yoga -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
+                        <img src="./Divulga+_files/yoga-outdoor.jpg" class="card-img-top" alt="Aula de Yoga">
+                        <div class="card-body event-card-body">
+                            <h5 class="event-card-title">Aula de Yoga ao Ar Livre</h5>
+                            <p class="event-date">18/11/2025</p>
+                            <p class="event-location">Gramado Central</p>
+                            <button class="btn btn-custom" onclick="showEventDetails(&#39;Aula de Yoga ao Ar Livre&#39;)">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTOS REALIZADOS -->
+    <section id="galeria" class="events-section">
+        <div class="container">
+            <h2 class="events-title">Galeria</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-6">
+                    <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
+                        <img src="./Divulga+_files/marcha-consciencia.jpeg" class="card-img-top" alt="Marcha da Consciência Negra">
+                        <div class="card-body event-card-body">
+                            <h5 class="event-card-title">Marcha da Consciência Negra</h5>
+                            <p class="event-date">20/11/2025</p>
+                            <p class="event-location">Guarulhos-SP</p>
+                            <button class="btn btn-custom" onclick="showEventGallery(&#39;Marcha da Consciência Negra&#39;)">Mais fotos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
+                        <img src="./Divulga+_files/xxx" class="card-img-top" alt="xxx">
+                        <div class="card-body event-card-body">
+                            <h5 class="event-card-title">xxx</h5>
+                            <p class="event-date">xxx</p>
+                            <p class="event-location">xxx</p>
+                            <button class="btn btn-custom" onclick="showEventGallery(&#39;xxx&#39;)">Mais fotos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
+                        <img src="./Divulga+_files/xxx" class="card-img-top" alt="xxx">
+                        <div class="card-body event-card-body">
+                            <h5 class="event-card-title">xxx</h5>
+                            <p class="event-date">xxx</p>
+                            <p class="event-location">xxx</p>
+                            <button class="btn btn-custom" onclick="showEventGallery(&#39;xxx&#39;)">Mais fotos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
+                        <img src="./Divulga+_files/xxx" class="card-img-top" alt="xxx">
+                        <div class="card-body event-card-body">
+                            <h5 class="event-card-title">xxx</h5>
+                            <p class="event-date">xxx</p>
+                            <p class="event-location">xxx</p>
+                            <button class="btn btn-custom" onclick="showEventGallery(&#39;xxx&#39;)">Mais fotos</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <h2 class="about-title">Sobre nós</h2>
+            <p class="about-text">
+                xxx
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h6>Política de Privacidade</h6>
+                    <a href="https://marianetelesbento.github.io/divulga-mais/#" class="footer-link">Saiba mais</a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h6>Contato</h6>
+                    <a href="mailto:contato@divulgaplus.com" class="footer-link">contato@divulgaplus.com</a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h6>Redes Sociais</h6>
+                    <div>
+                        <a href="https://marianetelesbento.github.io/divulga-mais/#" class="footer-link">Facebook</a>
+                        <span> | </span>
+                        <a href="https://marianetelesbento.github.io/divulga-mais/#" class="footer-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3" style="border-color: rgba(255,255,255,0.2);">
+            <p class="text-center mb-0">
+                © 2025 Divulga+. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal para detalhes do evento -->
+    <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eventModalLabel">Detalhes do Evento</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="eventModalBody">Carregando informações do evento...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-custom">Inscrever-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="eventModalGallery" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg"> <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eventModalLabelGallery">Galeria de Fotos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="eventModalBodyGallery">
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered"> 
+            <div class="modal-content bg-transparent border-0">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close" style="filter: drop-shadow(0 0 5px #000);"></button>
+                
+                <div class="modal-body p-0" id="fullscreenModalBody">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="./Divulga+_files/bootstrap.bundle.min.js.download"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="./Divulga+_files/script.js.download"></script>
+
+
+</body>
+</html>
