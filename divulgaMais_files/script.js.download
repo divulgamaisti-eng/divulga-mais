@@ -11,7 +11,7 @@ const eventos = {
   'Marcha da Consciência Negra': {
     data: '20/11/2025',
     local: 'Marco da Consciência Negra (próximo à Praça dos Estudantes - Centro) Guarulhos-SP',
-    descricao: 'Guarulhos Contra o racismo. Por Demobracia e igualdade, reparação e justiça racial.',
+    descricao: 'Guarulhos Contra o racismo. Por Democracia e igualdade, reparação e justiça racial.',
     imagem: 'images/marcha-consciencia-infos.jpg'
   },
   'Feira de Artesanato': {
@@ -30,7 +30,7 @@ const eventos = {
 
 const galeria = {
   'Marcha da Consciência Negra': {
-    descricao: 'Guarulhos Contra o racismo. Por Demobracia e igualdade, reparação e justiça racial.',
+    descricao: 'Guarulhos Contra o racismo. Por Democracia e igualdade, reparação e justiça racial.',
     images: ['images/marcha-consciencia.jpeg', 'images/xxx', 'images/xxx']
   },
   'xxx': {
