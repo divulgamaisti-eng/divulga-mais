@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://marianetelesbento.github.io/divulga-mais/ -->
+<!-- saved from url=(0049)https://divulgamaisti-eng.github.io/divulga-mais/ -->
 <html lang="pt-br">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,7 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./Divulga+_files/css2" rel="stylesheet">
+    <link href="./divulgaMais_files/css2" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="./divulgaMais_files/style.css">
     <title>Divulga+</title>
@@ -21,10 +21,10 @@
             <!-- <a class="navbar-brand" href="#home">Divulga
                 <span style="color: var(--accent-color);">+</span>
             </a> -->
-            <a class="navbar-brand " href="https://marianetelesbento.github.io/divulga-mais/#home">
-                <img src="./Divulga+_files/logo-divulga.jpeg" alt="logo-divulga" class="logo-divulga" style="width: 200px;">
+            <a class="navbar-brand " href="https://divulgamaisti-eng.github.io/divulga-mais/#home">
+                <img src="./divulgaMais_files/logo-divulga.jpeg" alt="logo-divulga" class="logo-divulga" style="width: 200px;">
 
-                <img src="./Divulga+_files/logo-divulga-mobile.jpeg" alt="logo-divulga" class="logo-divulga-mobile" style="width: 50px;">
+                <img src="./divulgaMais_files/logo-divulga-mobile.jpeg" alt="logo-divulga" class="logo-divulga-mobile" style="width: 50px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,16 +32,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://marianetelesbento.github.io/divulga-mais/#home">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://marianetelesbento.github.io/divulga-mais/#eventos">Eventos</a>
+                        <a class="nav-link" href="#eventos">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://marianetelesbento.github.io/divulga-mais/#sobre">Sobre</a>
+                        <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://marianetelesbento.github.io/divulga-mais/#contato">Contato</a>
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -49,10 +49,10 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="home" class="hero-section" style="background-image: url(&#39;images/hero-park.jpg&#39;);">
+    <section id="home" class="hero-section" style="background-image: url('images/hero-park.jpg');">
         <div class="hero-content mx-3">
             <h1>Descubra os melhores eventos</h1>
-            <button class="btn btn-custom" onclick="scrollToSection(&#39;eventos&#39;)">Confira os eventos</button>
+            <button class="btn btn-custom" onclick="scrollToSection('eventos')">Confira os eventos</button>
         </div>
     </section>
 
@@ -61,28 +61,28 @@
         <div class="container">
             <h2 class="events-title">Próximos Eventos</h2>
             <div class="row g-4">
-                <!-- Card 1 - Festival de Música -->
+                <!-- Card 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card event-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
-                        <img src="./Divulga+_files/marcha-consciencia.jpg" class="card-img-top" alt="Marcha da Consciência Negra">
+                        <img src="./images/pequeno-principe.jpeg" class="card-img-top" alt="Evento 1">
                         <div class="card-body event-card-body">
-                            <h5 class="event-card-title">Marcha da Consciência Negra</h5>
-                            <p class="event-date">20/11/2025</p>
-                            <p class="event-location">Guarulhos-SP</p>
-                            <button class="btn btn-custom" onclick="showEventDetails(&#39;Marcha da Consciência Negra&#39;)">Saiba mais</button>
+                            <h5 class="event-card-title">Exposição O Pequeno Príncipe</h5>
+                            <p class="event-date">03/03/2026-08/03/2026</p>
+                            <p class="event-location">Museu da Imagem e Som</p>
+                            <a class="btn btn-custom" target="_blank" href="https://misexperience.org.br/exposicao-o-pequeno-principe-80-anos/">Saiba mais</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 2 - Feira de Artesanato -->
+                <!-- Card 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
-                        <img src="./Divulga+_files/artisan-fair.png" class="card-img-top" alt="Feira de Artesanato">
+                        <img src="./images/titanic.jpeg" class="card-img-top" alt="Evento 2">
                         <div class="card-body event-card-body">
-                            <h5 class="event-card-title">Feira de Artesanato</h5>
-                            <p class="event-date">12/11/2025</p>
-                            <p class="event-location">Area de Piquenique</p>
-                            <button class="btn btn-custom" onclick="showEventDetails(&#39;Feira de Artesanato&#39;)">Saiba mais</button>
+                            <h5 class="event-card-title">Imersão Titanic</h5>
+                            <p class="event-date">A partir de Outubro de 2025</p>
+                            <p class="event-location">Shopping Eldorado</p>
+                            <a class="btn btn-custom" target="_blank" href="https://expo-titanic.com/sao-paulo/">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -90,12 +90,12 @@
                 <!-- Card 3 - Aula de Yoga -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
-                        <img src="./Divulga+_files/yoga-outdoor.jpg" class="card-img-top" alt="Aula de Yoga">
+                        <img src="./images/roots-racing.jpeg" class="card-img-top" alt="Evento 3">
                         <div class="card-body event-card-body">
-                            <h5 class="event-card-title">Aula de Yoga ao Ar Livre</h5>
-                            <p class="event-date">18/11/2025</p>
-                            <p class="event-location">Gramado Central</p>
-                            <button class="btn btn-custom" onclick="showEventDetails(&#39;Aula de Yoga ao Ar Livre&#39;)">Saiba mais</button>
+                            <h5 class="event-card-title">Roots Racing</h5>
+                            <p class="event-date">27/07/2026 e 28/07/2026</p>
+                            <p class="event-location">Festival Guarulhos Eco Esporte</p>
+                            <a class="btn btn-custom" target="_blank" href="https://rootsracing.com.br">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -110,45 +110,45 @@
             <div class="row g-4">
                 <div class="col-md-6 col-lg-6">
                     <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
-                        <img src="./Divulga+_files/marcha-consciencia.jpeg" class="card-img-top" alt="Marcha da Consciência Negra">
+                        <img src="./images/marcha-consciencia.jpg" class="card-img-top" alt="Marcha da Consciência Negra">
                         <div class="card-body event-card-body">
                             <h5 class="event-card-title">Marcha da Consciência Negra</h5>
                             <p class="event-date">20/11/2025</p>
                             <p class="event-location">Guarulhos-SP</p>
-                            <button class="btn btn-custom" onclick="showEventGallery(&#39;Marcha da Consciência Negra&#39;)">Mais fotos</button>
+                            <button class="btn btn-custom" onclick="showEventGallery('Marcha da Consciência Negra')">Mais fotos</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6">
                     <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
-                        <img src="./Divulga+_files/xxx" class="card-img-top" alt="xxx">
+                        <img src="./images/Sesc01.jpg" class="card-img-top" alt="sesc-verão-nos-parques">
                         <div class="card-body event-card-body">
-                            <h5 class="event-card-title">xxx</h5>
-                            <p class="event-date">xxx</p>
-                            <p class="event-location">xxx</p>
-                            <button class="btn btn-custom" onclick="showEventGallery(&#39;xxx&#39;)">Mais fotos</button>
+                            <h5 class="event-card-title">Sesc Verão nos Parques</h5>
+                            <p class="event-date">24/01 a 01/02/2026</p>
+                            <p class="event-location">Disponível na maioria dos SESCs de São Paulo</p>
+                            <button class="btn btn-custom" onclick="showEventGallery('Sesc Verão nos Parques')">Mais fotos</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6">
                     <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
-                        <img src="./Divulga+_files/xxx" class="card-img-top" alt="xxx">
+                        <img src="./images/parque-ecologico-do-tiete.webp" class="card-img-top" alt="atividades-educativas-e-trilhas">
                         <div class="card-body event-card-body">
-                            <h5 class="event-card-title">xxx</h5>
-                            <p class="event-date">xxx</p>
-                            <p class="event-location">xxx</p>
-                            <button class="btn btn-custom" onclick="showEventGallery(&#39;xxx&#39;)">Mais fotos</button>
+                            <h5 class="event-card-title">Atividades educativas e trilhas</h5>
+                            <p class="event-date">Durante as férias de janeiro de 2026</p>
+                            <p class="event-location">Ocorrerá em diversos parques ecológicos como Parque ecológico do Tietê.</p>
+                            <button class="btn btn-custom" onclick="showEventGallery('Atividades educativas e trilhas')">Mais fotos</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6">
                     <div class="card event-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease 0s, transform 0.6s ease 0s;">
-                        <img src="./Divulga+_files/xxx" class="card-img-top" alt="xxx">
+                        <img src="./images/aniversariosp.jpg" class="card-img-top" alt="aniversário-de-sao-paulo">
                         <div class="card-body event-card-body">
-                            <h5 class="event-card-title">xxx</h5>
-                            <p class="event-date">xxx</p>
-                            <p class="event-location">xxx</p>
-                            <button class="btn btn-custom" onclick="showEventGallery(&#39;xxx&#39;)">Mais fotos</button>
+                            <h5 class="event-card-title">Aniversário de São Paulo</h5>
+                            <p class="event-date">25/01/2026</p>
+                            <p class="event-location">Ocorrerá no parque do Carmo e no Parque do Povo</p>
+                            <button class="btn btn-custom" onclick="showEventGallery('Aniversário de São Paulo')">Mais fotos</button>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
         <div class="container">
             <h2 class="about-title">Sobre nós</h2>
             <p class="about-text">
-                xxx
+                Somos uma empresa especializada na divulgação de eventos, com foco em experiências ao ar livre. Conectamos pessoas a eventos em parques, promovendo cultura, lazer, esporte e entretenimento de forma acessível. Nosso objetivo é dar visibilidade a eventos que transformam espaços verdes em pontos de encontro, convivência e diversão para todos.
             </p>
         </div>
     </section>
@@ -182,9 +182,7 @@
                 <div class="col-md-4 text-center">
                     <h6>Redes Sociais</h6>
                     <div>
-                        <a href="https://marianetelesbento.github.io/divulga-mais/#" class="footer-link">Facebook</a>
-                        <span> | </span>
-                        <a href="https://marianetelesbento.github.io/divulga-mais/#" class="footer-link">Instagram</a>
+                        <a href="https://www.instagram.com/divulgamais.eventos?igsh=MXdudGF4cW5kcmZnZg%3D%3D&utm_source=qr" class="footer-link">Instagram</a>
                     </div>
                 </div>
             </div>
@@ -240,10 +238,10 @@
         </div>
     </div>
     <!-- Bootstrap 5.3 JS Bundle -->
-    <script src="./Divulga+_files/bootstrap.bundle.min.js.download"></script>
+    <script src="./divulgaMais_files/bootstrap.bundle.min.js"></script>
     
     <!-- Custom JavaScript -->
-    <script src="./Divulga+_files/script.js.download"></script>
+    <script src="./divulgaMais_files/script.js"></script>
 
 
 </body>
